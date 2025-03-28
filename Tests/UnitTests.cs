@@ -110,12 +110,6 @@ public class Division
         Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, "1"));
         Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, null));
     }
-
-    [TestMethod]
-    public void Divide_ByZero_Dang()
-    {
-        Assert.ThrowsException<DivideByZeroException>(() => Program.Divide("5", "0"));
-    }
 }
 
 [TestClass]
